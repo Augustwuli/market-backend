@@ -3,6 +3,7 @@ require('env2')('./.env');
 const config = require('./config');
 const hello = require('./routes/hello');
 const users = require('./routes/users');
+const products = require('./routes/products');
 const pluginHapiSwagger = require('./plugins/hapi-swagger');
 
 const server = new Hapi.Server();
@@ -18,7 +19,8 @@ const init = async () => {
   ]);
   server.route([
     ...hello,
-    ...users
+    ...users,
+    ...products,
   ])
   await server.start();
   console.log(`Server running at: ${server.info.uri}`);

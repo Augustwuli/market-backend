@@ -1,15 +1,15 @@
 module.exports = [
   {
-    method: 'GET',
+    method: 'POST',
     path: '/hello',
     handler: (request, reply)=>{
-      let result = {
-        success: true,
-        message: '测试成功',
-        data: {},
-        statu: 0
-      }
-      reply(result);
+      // let result = {
+      //   success: true,
+      //   message: '测试成功',
+      //   data: {},
+      //   statu: 0
+      // }
+      reply('request');
     },
     config: {
       tags: ['api','tests'],
