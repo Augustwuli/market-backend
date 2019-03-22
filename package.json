@@ -1,0 +1,23 @@
+{
+  "name": "market-backend",
+  "version": "1.0.0",
+  "description": "一个基于hapi的电子商城后端",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augustwuli/market-backend.git"
+  },
+  "author": "Augustwuli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Augustwuli/market-backend/issues"
+  },
+  "homepage": "https://github.com/Augustwuli/market-backend#readme",
+  "dependencies": {
+    "env2": "^2.2.2",
+    "hapi": "^16.7.0"
+  }
+}
