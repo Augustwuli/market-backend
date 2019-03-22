@@ -1,9 +1,15 @@
 module.exports = [
   {
     method: 'GET',
-    path: '/',
+    path: '/hello',
     handler: (request, reply)=>{
-      reply('hello');
+      let result = {
+        success: true,
+        message: '测试成功',
+        data: {},
+        statu: 0
+      }
+      reply(result);
     },
     config: {
       tags: ['api','tests'],
